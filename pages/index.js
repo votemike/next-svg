@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Vercel from '../public/vercel.svg';
 
 export default function Home() {
   return (
@@ -57,7 +58,10 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <Vercel/>
+          <svg>
+            <use xlinkHref="#icon-book"/>
+          </svg>
         </a>
       </footer>
     </div>
